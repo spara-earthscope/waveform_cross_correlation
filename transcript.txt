@@ -1,0 +1,158 @@
+Introduction
+The Slack channel have posted that they are familiar and currently user have used waveform prosper elation in their research so
+I want to highlight some exciting applications of waveform cross correlations towards the end of end of this presentation so that the students who are more familiar with the technique.
+Are more
+Engaged with today's presentation so
+I'll continue on. Again, I'm Elizabeth Burke from the University of Utah and we're going over waveform cross correlations today as part of the unit four
+Overview
+So a quick overview of what we're going to review. Today we're going to go over the basic theory of cross correlation and then the major applications. I'll just briefly touch on match filtering. This isn't my specialty. So I'm not going to spend a lot of time on it.
+And then we'll jump into cross correlation and waveforms to take care of greens functions and we'll go over the theory processing and some example applications from the TA array.
+And then we're going to discuss just briefly a few packages in Python that are available to do processing that I would highly suggest that you check out
+And then we are also going to again talk about the highlights of unique cross correlation applications and I've posted a thread within the unit four
+module on Slack and so please respond to that thread if you know of other exciting research that's going on using wavefrom cross correlation. You think it's especially interesting
+Or mention it in the chat at when we get to that point in the presentation.
+So the basic theory last week, Professor German Prieta covered
+Convolution and so we are now all familiar with convolution. So here's the time domain representation of convolution and the frequency domain.
+Representation. This week we're going over cross correlation
+Which can be thought of as a sliding dot product and is written here for the time domain. And you can see that is extremely, extremely similar to convolution pretty much the main difference is we have a plus instead of a minus
+Here and then the frequency domain representation includes this complex conjugate term.
+So I also want to mention some basic theory that cross correlation unlike convolution is not commutative. So what does this mean? So first let's prove how it's not so if this is a representation which we just covered and then we have
+If we substitute sigma equal to t plus Tao in, then we can obtain the results here.
+And
+We get sigma or minus t here and then we can move these terms around and we can see that that's not actually equal to
+H of t across all your expertise. So we can think about this as if t we reverse it, then z minus t is equal to the integral from minus infinity for the age of sigma multiply by x of sigma plus t which exists h of t prosper in the equity, which is the reversed the time flipped.
+Result of what we had up here so we can also think about this. This is just from Wikipedia. So if you're confused about this, I would suggest
+Going reading a little bit about it, but I'm just going to highlight this nice example at convolution. If you convolve f with g or g with f you get the same results. However, if you crosscorrelate G with F or F, G, you have a flip of this this result here.
+And then I just want to jump into the basic theory of going to the frequency domain, just a quick review. I believe that professor German covered this for convolution last week.
+So we're all probably familiar with how to do this now, but just to make sure we're on the same page. We can go into the
+Frequency domain via the fourier transform and to go from z of t to z of f or where f is frequency and then if we substitute sigma is equal to two plus Tao.
+We have t equal to sigma minus tao and dT sigma, then we get this fun form here and we can move some terms around and things. And then we get our final result here for the frequency domain representation
+And then a quick shout out. We have covered this in depth about the last two weeks from Dr. Emily Wolin and from
+From prior to last week so out of correlation and power spectral density. So we've covered our spectral densities before. Here's just a quick reminder of what we're talking about the case, you're a visual person.
+So this is a figure from Keith Kopers group so Koper and Burlacu 2013 and this is just showing the power spectral density is related to the auto correlation
+At station x
+Cross Correlation
+And then, just a quick overview of match filtering. So we can do cross correlation, which is basically a
+Moving sliding dot product here. So this is a really nice representation provided by Wu in reference to her recent work on Yellowstone and steamboat.
+geysers. And so we can see the delay time and across correlation amplitude and when this waveform can be detected within this noisy signal, then we get a spike, which many of you are familiar with based off of your slack responses, which is great.
+Other Applications of Match Filtering
+Another shout out of other applications of match filtering. So there's waveform correlation event detection, which is basically what we just talked about. And this is from paper from Stephen Arrowsmith, who will be presenting next week. So stay tuned for his array processing.
+Module. And then we also have subspace creation and detection to classify different events together and an example of that is shown here from chambers et al in 2015 and there are many, many examples of using match filtering. So if you have a preference favorite with free to post in Slack.
+Channel.
+So cross corrrelation we could also use this tool to obtain empirical greens function. So typically we can use this to obtain body waves are in a kata has several papers on this and surface waves which Fan Chi Lin and a lot of people have papers using surface waves also
+And you can obtain this using ambient noise cross correlation. And there are lots of papers detailing how to go about processing to do this will do some processing in our Jupyter notebooks today.
+But you can review Lin et al 2014 and then Vincent et al 2007 and there are many others. And then this is just for reference. We all know this, but it's nice to have a common figure
+Of a rayliegh wave in the direction of propagation. This retrograde part of particle motion, which is a very large signal. So it's a little bit easier to detect then a bodywave.
+So this is an example where we have two detectors and we have noisy waveforms at both. And if we have signal that's passing
+It goes through this detector and then travels through subsurface and is recorded again at this detector, we can cross correlate these two noisy waveforms to obstain empirical greens function.
+Which is sensitive to the subsurface structure between these two two stations, because it's changed as it goes from one station to the other station. And usually this is very, very small.
+But we stack things up. And then after stacking things up over enough time, then we can observe clear signal. So here is just an example of a synthetic
+Synthetic Example
+So if we have noise sources everywhere. And we get waveforms from those sources and they cross correlate them, then we can obtain a very beautiful.
+emperical greens function, or excuse me, a very beautiful crosscorrelation which is related to being empirical greens function. And so this is really beautiful and really exciting. However, in the real Earth we typically don't have sources everywhere.
+Source Limitations
+Our sources are tend to be limited to ocean microsiesms, which we've covered the last few weeks.
+But honestly, you can use any sort of source as long as it travels and was recorded
+At one station travels through whatever subsurface space you're interested in and is recorded at the next station. If you have a source and it is not creating a wave, it's traveling between the two stations, then of course, you won't be able to use this to obtain
+A greens function.
+Processing Limitations
+And then something to keep in mind that depending on the processing that you do your cross correlation may or may not be directly related to the greens function.
+And so there are lots of papers detailing about how specific processing is or isn't related to the greens function and how to resolve those sort of issues so
+Depending on what sort of processing you use it's just something to keep in mind. So this is just a quick overview from Fan Chi Lin et al 2008 just reviewing how they went from cross correlation function to the greens function using
+The average of the positive and a causal side. So this is the a causal side. For those of you who aren't familiar, which is the negative lagtime.
+And this is a causal side which is the positive lagtime and the positive lagtime corresponds to if this is a cross correlation between station one station two
+The causal side corresponds to station one as a source virtual source and station two as a virtual receiver and vice versa for the acausal side
+So just a quick review of some US array applications and cross correlations. So this is a quick review from Lin et al 2008 where crosscorrelations were used to
+Find rayleigh waves which have this lovely retrograde motion. And then this information is used to do a eikonal tomography to obtain these phase velocity maps and H over V
+Ratios and the US array was one of the initial large scale deployments that enabled the power of cross correlation to image the sub surface of the earth to really be understood and be extremely useful.
+And so I would highly suggest if you're unfamiliar to go check out the papers that have come out at that time and recent publications of the Alaska transportable array have also
+come out in the last year or
+Two. So go check those out as well.
+Processing Scheme
+So in general the processing scheme and we will review this in the Jupyter notebooks today. So we're just going to briefly gloss over this now.
+Is you take raw data, you remove the instrument response, remove the trend and bandpass filter and cut to whatever length you want. So in Benson et al 2007
+They use one day crosscorrelations, you can use shorter time windows. You can use longer time windows. It depends on
+Many things usually the main contributing factor is your computation al;owed time and storage space. So how many windows. Do you really have
+Do you need to obtain a signal. So you generally try to cut down to whatever
+timeframe that you leave it is actually going to give you a good signal but fully captures whatever source that you're looking for. So if you have an eight second
+microseiesm moving through. We need to make sure that your window is going to be able to be long enough to capture that source reaching
+The very far and near stations throughout your day. Do you want to just make sure that your windows are long enough to capture that. But usually, that's not the problem. Usually, the problem is computation time storage space.
+After doing this, then time domain normalization is applied we'll review that today, but basically this is trying to take out earthquake signals and other noise signals that you might not want by doing
+Time domain normalization, which is running mean in the time domain we'll review that in the Jupyter notebook and then you apply spectral whitening
+Which was, I believe, briefly reviewed a little bit last week and touched on, and this is basically the same thing as time domain normalization, but in the frequency domain.
+You can tweak these however you like. And for those of you who have a little bit more cross correlation
+Experience in terms of retrieving the emperical greens function, I encourage you to post in the slack. What you have found to be useful. And what sort of data sets that you are using because
+How you need to do this depends a lot on the deployment that you're working with station instrumentation, a lot of different factors and then the phase two you compete your cross correlations and then you stack your cross relations together to obtain your final result.
+And we'll also review the importance of stacking today as well. So again, we'll play around with the in the notebooks today, but please add to the slack, whatever you have found useful in your own research.
+So this is a quick example from the transportable array in Alaska. This is bandpassed around 16 seconds. This is from store station DHY shown as a star here. This is just a record section.
+sorted by distance of the station from DHY. And you can see this really beautiful. This is not symmetric
+Signal moving out corresponding the surface waves. This is the ZZ component. Now I'm going to show a quick video that's going to capture how the really way. It's really move. And this has not been
+tweaked to highlight really waves. It just happens that that the dominant signal that we are seeing for the specific
+Station and then the specific period, which is a 16 second period. And here I'm using ZZ ZN and ZE cross correlations to determine at each station.
+What the color is and then the size will also change according to events at the positive or negative side of the peaks here. So if it's at the positive, it will be larger. And that's negative. It'll be smaller. And then I also have it move. According to the ZN and ZE
+Distance space. And so you'll be able to see the retrograde car commercial I'm gonna play
+So here you can really see that retrograde motion and all I can post this in the slack and it's also on my YouTube channel.
+For those who are interested if the lagtime is making it look a little funky here, but it's really, really cool to be able to see what just
+The relatively raw cross correlated data can give us and the very beautiful really waves that we're capturing from this. So this is a beautiful retrograde motion moving out. And then this is a representation which is shown as this triangle here and I'll show that one more time.
+Multiple desktop.
+We can see it retrograde as it moves into towards the source station as well as a causal side that really highlights how that works. And then as we switch over to the positive side.
+Can see that surface wave moving out.
+Dense Nodal Array
+So I also want to mention that there are some beautiful advantages as you can see
+To using a dense nodal array. So this is a very dense array in Long Beach and Fan Chi Lin in 2013 I think publish one of the initial papers using cross correlation
+Application to this data set. And there's been a lot of sense then that have worked on using machine learning with this using
+Trying to retrieve body waves, etc, etc. And so it's just really beautiful just what the cross correlations can show you about what the source distribution looks like what the wave pattern looks like the different nuances to that pattern, et cetera.
+Python Crosscorrelation Packages
+So now we're going to jump into just a quick shout out to some Python packages that are available.
+To do cross correlation. So there's always obspy, you know, our, our good friend has a cross correlation function. And so you can check that out.
+Another option is Ms noise, which is a Python package. It's been around for a while and a newer Python package that's come on to the scene recently is Noise Py
+Each of these has its pros and cons. So I would highly suggest that you all go check them out. If you're interested in using them and try to see what will work best for your specific application.
+References
+And then just a shout out that if you do use one of these packages. Please included as a reference and at least in the acknowledgement section of your paper.
+I include the citations here, but they're also always on the website where you
+For that specific package on GitHub, or their personal websites and it's very important because it helps these different groups be competitive for grants and funding and then also further different students and colleagues within
+Creating that package in being competitive for their own job applications and things like that. So make sure that you do that, plus it's also good just exciting sources. So other people know how they can try to use in science.
+Application Highlights
+So I'm going to jump in to the fun part of the lecture, which is just a few application highlights. Again, if you know of any that really exciting studies, please post them in the slack or in the chat here. And I'd be happy to give them a shout out or Fransiska or Suzan
+To me, so there's always our classic friend tomography. So there's the transportable array. So I just included a little plug for my own paper here.
+Tomography
+Showing the shear wave velocity model at one to 100 kilometer depth here you can see really beautiful.
+sedimentary basins and mountain ranges and under plated sediments and
+Pacific slabs and all sorts of really cool things are available from tomography. This was using the transportable or a similar to the
+Lower 48 of the United States to transportable array us array and there's also a regional networks studies doing tomography. So here's just a shout out and tomography of southern California.
+And there's typography from nodal arrays. I've only thrown to on here because they're just so many. I couldn't choose so I chose two and then just moved on.
+But so there's double beamforming from Wang and from Nakata there's this beautiful P-wave velocity of Long Beach, California.
+But there are lots of studies using nodes to do tomography and via cross correlation and so go ahead and check out some of those papers and posting the slack.
+Magnet Earthquake Sequence
+And just a quick shout out that the recent Utah Magna earthquake sequence. There's a PhD candidate about to graduate Pang
+Did double difference relocation using cross correlation and differential times. And so you can see that just using differential time to catalog.
+And gives you kind of pretty uncertain results and then using different times from cross correlation really tightens up
+Results, which is really important for us to be able to characterize the earthquake sequence for Salt Lake City, Utah and determine Hazard Analysis risk analysis imaging fault structures.
+Rock Paper
+Another shout out to Jeff Morris Research Group also at University of Utah, but they have this really awesome paper.
+come out this year very recently from Paul Geimer looking at vibration and modes from cross correlation of stations nodal instruments that are deployed over an arch and trying to image the different resonance modes and
+Things like that, which is really cool. So go check out
+And then this is just another example of match filtering.
+Recent Work
+When I highlight some recent work using
+crosscorrelation that's been used to image. Old Faithful geysers plumbing structure, including this upper part from
+Wang out of Taiwan now and then this lower part from today, Wu and others in 2019 and they were able to use cross correlation to really carefully image this detailed structure here.
+Based off of imaging the doing cross correlation to locate the source of the bubble collapse and
+And other things. So go check out this paper. It's really cool. And this is just a quick video showing how the tremor shifts throughout the eruption cycle using cross correlation to detect and look at that.
+And then just another example, which is really cool using
+cross correlations to estimate magma pressurization within
+The dike at the Kilauea 2018 volcano erupting in Hawaii and estimating flow.
+And then this is just another example of using waveform correlation you get more accurate differential times for Tomo DD DD from Scales now Holt in 2018. This is a figure from that paper just example of another study using
+Sort of the match filtering and waveform correlation to technique to get differential times
+And then here's just one example. There are a lot of examples of this. But the building damage detection. This is from Kohler et al 2018 which is using cross correlation to estimate where there's damage within a building.
+So go check out that study as well.
+References and Questions
+And here are just some of the references that I mentioned before.
+Shoutouts
+And thank you very much. I'd be happy to take questions or
+Comments or shout out some certain studies or anything else.
+Contact Information
+Then who's just a plug for me. I wanted a clear cut stuff Francisco wants to include this but
+I have a website, you can check out and then this is my contact information for flex
+And I notice in the chat. There is a request to share the slides I'll share the slides that I have for
+
