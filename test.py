@@ -15,8 +15,8 @@ MAXRADIUS_DEG = 10.0
 MIN_DIST_KM, MAX_DIST_KM = 100.0, 400.0
 
 # Band of interest (volcano):
-FREQMIN = 1   # Hz  (20 s)
-FREQMAX = 5   # Hz  (5 s)
+FREQMIN = 0.5   # Hz  (20 s)
+FREQMAX = 2.0   # Hz  (5 s)
 
 # Windowing and correlation
 WINDOW_LENGTH = 24 * 3600     # seconds (one-day windows)

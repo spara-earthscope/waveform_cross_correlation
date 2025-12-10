@@ -15,7 +15,7 @@ st2 = client.get_waveforms("IU", "CCM", "00", "BHZ", t, t + 3600)
 def preprocess(st):
     st.detrend("linear")
     st.taper(max_percentage=0.05)
-    st.filter("bandpass", freqmin=0.05, freqmax=0.1)  # 10-20 s period
+    st.filter("bandpass", freqmin=0.5, freqmax=2.0)  # 10-20 s period
     st.resample(1.0)  # Resample to 1 Hz
     return st
 
