@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Hotovec-Ellis, Alicia J.</origin>
+        <pubdate>20211221</pubdate>
+        <title>Time series of seismic velocity changes during the 2018 collapse of Kīlauea volcano derived from coda wave interferometry of repeating earthquakes</title>
+        <geoform>Plain text files</geoform>
+        <pubinfo>
+          <pubplace>Reston, VA</pubplace>
+          <publish>U.S. Geological Survey</publish>
+        </pubinfo>
+        <onlink>https://doi.org/10.5066/P9X3QOSU</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>These processed data and provisional codes were created to investigate seismic velocity changes associated with the collapse of Kīlauea caldera during its 2018 eruption. Primary data (i.e., seismic waveforms) are hosted at the Incorporated Research Institutions for Seismology (IRIS; https://www.iris.edu/) and are ingested by the codes included here to reproduce the data analyzed in Hotovec-Ellis et al., 'Earthquake-derived seismic velocity changes during the 2018 caldera collapse of Kīlauea volcano.' The included code ('cwire' short for Coda Wave Interferometry with Repeating Earthquakes) takes a catalog of earthquakes clustered by waveform similarity (e.g., REDPy, https://github.com/ahotovec/REDPy/) and processes the coda for each pair of earthquakes within each cluster for changes in seismic velocity. Specifically, it finds the optimal time stretching factor to either expand or condense one earthquake's coda waveform to match the other, with that stretching factor equal to the relative change in seismic velocity (dv/v). It then takes those pairwise measurements and uses damped least-squares inversion to find the continuous time series that fits the pairwise measurements and writes them to the 'out' directory; results from runs described by the included configuration files are included in this directory for validation as part of this data release. The resulting time series can then be compared across the local seismic network and with other time series such as deformation. All data are stored in HDF5 database files (*.h5) created in the working directory. See README.txt for further documentation.</abstract>
+      <purpose>Data were created by included codes to investigate seismic velocity changes likely caused by strain due to deformation associated with caldera collapse to better understand the origin of seismic velocity changes in general, and assess their utility as a volcanic monitoring tool.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20180427</begdate>
+          <enddate>20180806</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-155.3</westbc>
+        <eastbc>-155.16</eastbc>
+        <northbc>19.46</northbc>
+        <southbc>19.36</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>USGS Thesaurus</themekt>
+        <themekey>volcanic activity</themekey>
+        <themekey>volcano monitoring</themekey>
+        <themekey>seismology</themekey>
+        <themekey>seismic methods</themekey>
+        <themekey>time series analysis</themekey>
+        <themekey>regression analysis</themekey>
+        <themekey>scientific software</themekey>
+      </theme>
+      <theme>
+        <themekt>USGS Metadata Identifier</themekt>
+        <themekey>USGS:61a8fa27d34eb622f699a6a6</themekey>
+      </theme>
+      <place>
+        <placekt>Geographic Names Information System (GNIS)</placekt>
+        <placekey>Kīlauea Crater</placekey>
+        <placekey>Kīlauea</placekey>
+        <placekey>Hawaii County</placekey>
+      </place>
+    </keywords>
+    <accconst>none</accconst>
+    <useconst>none</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Alicia J Hotovec-Ellis</cntper>
+          <cntorg>ALASKA REGION: VOLCANO SCIENCE CENTER</cntorg>
+        </cntperp>
+        <cntpos>Research Geophysicist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>350 North Akron Road</address>
+          <city>Moffett Field</city>
+          <state>CA</state>
+          <postal>94035</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>650-439-2886</cntvoice>
+        <cntemail>ahotovec-ellis@usgs.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>No formal attribute accuracy tests were conducted</attraccr>
+    </attracc>
+    <logic>All results have been reviewed by the author to fall within expected ranges. The results for the HHE component of station KKO prior to 2018-06-27 are considered suspicious due to sensor malfunction, but included for completeness as the raw seismic data are available.</logic>
+    <complete>Data set is considered complete for the information presented, as described in the abstract. Users are advised to read the rest of the metadata record carefully for additional details.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>No formal positional accuracy tests were conducted</horizpar>
+      </horizpa>
+      <vertacc>
+        <vertaccr>No formal positional accuracy tests were conducted</vertaccr>
+      </vertacc>
+    </posacc>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Hawaiian Volcano Observatory (HVO)</origin>
+            <pubdate>1956</pubdate>
+            <title>Hawaiian Volcano Observatory Network</title>
+            <geoform>miniSEED</geoform>
+            <pubinfo>
+              <pubplace>IRIS DMC FDSNWS dataselect Web Service (IRISDMC)</pubplace>
+              <publish>The IRIS Data Management Center (IRISDMC)</publish>
+            </pubinfo>
+            <onlink>https://service.iris.edu/fdsnws/dataselect/1/</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Time series data for raw seismic waveforms</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>20180427</begdate>
+              <enddate>20180806</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>Last accessed 20211210</srccurr>
+        </srctime>
+        <srccitea>HV</srccitea>
+        <srccontr>Source for raw waveforms used in data processing; see http://fdsn.adc1.iris.edu/networks/detail/HV/ for details.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Lin, Fan-Chi and Farrell, Jamie</origin>
+            <pubdate>2018</pubdate>
+            <title>Hawaii Nodal RAPID 2018</title>
+            <geoform>miniSEED</geoform>
+            <pubinfo>
+              <pubplace>The IRIS Data Management Center (PH5 repository) (IRISPH5)</pubplace>
+              <publish>The IRIS Data Management Center (IRISDMC)</publish>
+            </pubinfo>
+            <onlink>http://service.iris.edu/ph5ws/dataselect/1/</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Time series data for raw seismic waveforms</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>20180615</begdate>
+              <enddate>20180726</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>Last accessed 20211210</srccurr>
+        </srctime>
+        <srccitea>Z1_2018</srccitea>
+        <srccontr>Source for raw waveforms for temporary nodal instruments used in data processing; see http://fdsn.adc1.iris.edu/networks/detail/Z1_2018/ for details.</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Shelly, David R. and Thelen, Weston A.</origin>
+            <pubdate>20191204</pubdate>
+            <title>Anatomy of a Caldera Collapse: Kīlauea 2018 Summit Seismicity Sequence in High Resolution</title>
+            <geoform>Plain text</geoform>
+            <pubinfo>
+              <pubplace>https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019GL085636</pubplace>
+              <publish>American Geophysical Union</publish>
+            </pubinfo>
+            <onlink>https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019GL085636#support-information-section</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Catalog of earthquake relocations</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>20180429</begdate>
+              <enddate>20180807</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>Last accessed 20211210</srccurr>
+        </srctime>
+        <srccitea>Shelly and Thelen (2019)</srccitea>
+        <srccontr>Associated with second catalog (redpycatalog.txt) by time to produce clusterlocs.txt</srccontr>
+      </srcinfo>
+      <procstep>
+        <procdesc>Associate locations to REDPy catalog from Shelly and Thelen (2019) based on event times. Mean location (latitude, longitude, depth) of each cluster of earthquakes, if found in Shelly and Thelen (2019), is written to cluserlocs.txt.</procdesc>
+        <procdate>20190215</procdate>
+        <proccont>
+          <cntinfo>
+            <cntperp>
+              <cntper>Alicia J Hotovec-Ellis</cntper>
+              <cntorg>ALASKA REGION: VOLCANO SCIENCE CENTER</cntorg>
+            </cntperp>
+            <cntpos>Research Geophysicist</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>350 North Akron Road</address>
+              <city>Moffett Field</city>
+              <state>CA</state>
+              <postal>94035</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>650-439-2886</cntvoice>
+            <cntemail>ahotovec-ellis@usgs.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+      <procstep>
+        <procdesc>Run 'cwire' program (included in data release) to produce velocity change timeseries.</procdesc>
+        <procdate>20211205</procdate>
+        <proccont>
+          <cntinfo>
+            <cntperp>
+              <cntper>Alicia J Hotovec-Ellis</cntper>
+              <cntorg>ALASKA REGION: VOLCANO SCIENCE CENTER</cntorg>
+            </cntperp>
+            <cntpos>Research Geophysicist</cntpos>
+            <cntaddr>
+              <addrtype>mailing and physical</addrtype>
+              <address>350 North Akron Road</address>
+              <city>Moffett Field</city>
+              <state>CA</state>
+              <postal>94035</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>650-439-2886</cntvoice>
+            <cntemail>ahotovec-ellis@usgs.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>out/cwire_*.csv</enttypl>
+        <enttypd>All .csv files in the out/ directory are the inversion results produced by the included program 'cwire' and share the same format. File naming convention includes the station and channel codes separated by an underscore, as well as if a subset of earthquake depths were used in the inversion (&lt;=1.5 km depth for "_shallow" or &gt;1.5 km depth for "_deep").</enttypd>
+        <enttypds>Alicia Hotovec-Ellis</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>Date</attrlabl>
+        <attrdef>UTC date and time.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>2018-04-27 00:00:00</rdommin>
+            <rdommax>2018-08-06 00:00:00</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>dv/v</attrlabl>
+        <attrdef>Percent relative seismic velocity change from inversion.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>-7.19443720554</rdommin>
+            <rdommax>17.5941914259</rdommax>
+            <attrunit>percent</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>StdErr</attrlabl>
+        <attrdef>Standard deviation of misfit between inverted solution and pairwise measurements used in the inversion that are between the times of the current row's date and the next; undefined for final row.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>4.448682771670</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Crosses</attrlabl>
+        <attrdef>Number of pairs of measurements with one half of the pair before the listed time and the other half after the time in the following row; undefined for final row.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>169929</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Density</attrlabl>
+        <attrdef>Number of pairs with one half of the pair within the time between the listed time and the time on the next row; undefined for final row.</attrdef>
+        <attrdefs>Producer defined.</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>0</rdommin>
+            <rdommax>3505</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>U.S. Geological Survey - ScienceBase</cntper>
+          <cntorg>U.S. Geological Survey</cntorg>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>Denver Federal Center, Building 810, Mail Stop 302</address>
+          <city>Denver</city>
+          <state>CO</state>
+          <postal>80225</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>1-888-275-8747</cntvoice>
+        <cntemail>sciencebase@usgs.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty.</distliab>
+    <techpreq>This zip file contains provisional code written in Python 3.7 with several package dependencies; instructions for the installation of a virtual environment to execute the code is included in the README.txt file. All other included files are plain text or Portable Document Format (.pdf).</techpreq>
+  </distinfo>
+  <metainfo>
+    <metd>20211221</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Alicia J Hotovec-Ellis</cntper>
+          <cntorg>ALASKA REGION: VOLCANO SCIENCE CENTER</cntorg>
+        </cntperp>
+        <cntpos>Research Geophysicist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>350 North Akron Road</address>
+          <city>Moffett Field</city>
+          <state>CA</state>
+          <postal>94035</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>650-439-2886</cntvoice>
+        <cntemail>ahotovec-ellis@usgs.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>
