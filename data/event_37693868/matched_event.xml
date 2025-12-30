@@ -1,0 +1,808 @@
+<?xml version='1.0' encoding='utf-8'?>
+<q:quakeml xmlns="http://quakeml.org/xmlns/bed/1.2" xmlns:q="http://quakeml.org/xmlns/quakeml/1.2" xmlns:ns0="http://anss.org/xmlns/catalog/0.1">
+  <eventParameters publicID="smi:local/bb1f3b4b-b92a-43ec-ae54-2f2fde2ae060">
+    <event publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?eventid=37693868" ns0:datasource="ci" ns0:dataid="ci37693868" ns0:eventsource="ci" ns0:eventid="37693868">
+      <preferredOriginID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</preferredOriginID>
+      <preferredMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?magnitudeid=111257836</preferredMagnitudeID>
+      <type>earthquake</type>
+      <creationInfo>
+        <agencyID>CI</agencyID>
+        <agencyURI>quakeml:doi.org/10.7909/C3WD3xH1</agencyURI>
+        <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        <version>2</version>
+      </creationInfo>
+      <origin publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028" ns0:datasource="ci" ns0:dataid="ci37693868" ns0:eventsource="ci" ns0:eventid="37693868">
+        <time>
+          <value>2025-01-01T07:27:37.780000Z</value>
+        </time>
+        <latitude>
+          <value>35.7665</value>
+        </latitude>
+        <longitude>
+          <value>-118.0306667</value>
+        </longitude>
+        <depth>
+          <value>5550.0</value>
+          <uncertainty>3890.0</uncertainty>
+        </depth>
+        <depthType>from location</depthType>
+        <timeFixed>false</timeFixed>
+        <epicenterFixed>false</epicenterFixed>
+        <methodID>smi:ci.anss.org/origin/HYP2000</methodID>
+        <quality>
+          <associatedPhaseCount>11</associatedPhaseCount>
+          <usedPhaseCount>11</usedPhaseCount>
+          <associatedStationCount>8</associatedStationCount>
+          <usedStationCount>8</usedStationCount>
+          <standardError>0.2</standardError>
+          <azimuthalGap>95.0</azimuthalGap>
+          <secondaryAzimuthalGap>482.0</secondaryAzimuthalGap>
+          <minimumDistance>0.1171</minimumDistance>
+          <maximumDistance>0.2708</maximumDistance>
+          <medianDistance>0.2299</medianDistance>
+        </quality>
+        <type>hypocenter</type>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+        <originUncertainty>
+          <preferredDescription>confidence ellipsoid</preferredDescription>
+          <horizontalUncertainty>550.0</horizontalUncertainty>
+          <confidenceLevel>95.0</confidenceLevel>
+          <confidenceEllipsoid>
+            <semiMajorAxisLength>9360.0</semiMajorAxisLength>
+            <semiMinorAxisLength>816.0</semiMinorAxisLength>
+            <semiIntermediateAxisLength>1344.0</semiIntermediateAxisLength>
+            <majorAxisPlunge>85.0</majorAxisPlunge>
+            <majorAxisAzimuth>357.0</majorAxisAzimuth>
+            <majorAxisRotation>341.0</majorAxisRotation>
+          </confidenceEllipsoid>
+        </originUncertainty>
+        <arrival publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217868">
+          <pickID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217868</pickID>
+          <phase>S</phase>
+          <timeCorrection>0.0</timeCorrection>
+          <azimuth>342.5</azimuth>
+          <distance>0.1171</distance>
+          <takeoffAngle>
+            <value>104.0</value>
+          </takeoffAngle>
+          <timeResidual>0.37</timeResidual>
+          <timeWeight>0.07</timeWeight>
+          <creationInfo>
+            <agencyID>CI</agencyID>
+            <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217876">
+          <pickID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217876</pickID>
+          <phase>P</phase>
+          <timeCorrection>-0.11</timeCorrection>
+          <azimuth>53.1</azimuth>
+          <distance>0.1263</distance>
+          <takeoffAngle>
+            <value>102.0</value>
+          </takeoffAngle>
+          <timeResidual>-0.15</timeResidual>
+          <timeWeight>0.15</timeWeight>
+          <creationInfo>
+            <agencyID>CI</agencyID>
+            <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217884">
+          <pickID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217884</pickID>
+          <phase>S</phase>
+          <timeCorrection>-0.36</timeCorrection>
+          <azimuth>53.1</azimuth>
+          <distance>0.1263</distance>
+          <takeoffAngle>
+            <value>101.0</value>
+          </takeoffAngle>
+          <timeResidual>0.02</timeResidual>
+          <timeWeight>0.07</timeWeight>
+          <creationInfo>
+            <agencyID>CI</agencyID>
+            <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217892">
+          <pickID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217892</pickID>
+          <phase>S</phase>
+          <timeCorrection>-0.38</timeCorrection>
+          <azimuth>247.7</azimuth>
+          <distance>0.1863</distance>
+          <takeoffAngle>
+            <value>94.0</value>
+          </takeoffAngle>
+          <timeResidual>0.15</timeResidual>
+          <timeWeight>0.07</timeWeight>
+          <creationInfo>
+            <agencyID>CI</agencyID>
+            <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217900">
+          <pickID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217900</pickID>
+          <phase>S</phase>
+          <timeCorrection>-0.18</timeCorrection>
+          <azimuth>78.9</azimuth>
+          <distance>0.2201</distance>
+          <takeoffAngle>
+            <value>93.0</value>
+          </takeoffAngle>
+          <timeResidual>0.98</timeResidual>
+          <timeWeight>0.07</timeWeight>
+          <creationInfo>
+            <agencyID>CI</agencyID>
+            <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217908">
+          <pickID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217908</pickID>
+          <phase>P</phase>
+          <timeCorrection>0.18</timeCorrection>
+          <azimuth>108.0</azimuth>
+          <distance>0.2397</distance>
+          <takeoffAngle>
+            <value>92.0</value>
+          </takeoffAngle>
+          <timeResidual>-0.14</timeResidual>
+          <timeWeight>0.15</timeWeight>
+          <creationInfo>
+            <agencyID>CI</agencyID>
+            <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217916">
+          <pickID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217916</pickID>
+          <phase>S</phase>
+          <timeCorrection>-0.01</timeCorrection>
+          <azimuth>108.0</azimuth>
+          <distance>0.2397</distance>
+          <takeoffAngle>
+            <value>92.0</value>
+          </takeoffAngle>
+          <timeResidual>0.62</timeResidual>
+          <timeWeight>0.07</timeWeight>
+          <creationInfo>
+            <agencyID>CI</agencyID>
+            <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217924">
+          <pickID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217924</pickID>
+          <phase>S</phase>
+          <timeCorrection>-0.3</timeCorrection>
+          <azimuth>201.2</azimuth>
+          <distance>0.2461</distance>
+          <takeoffAngle>
+            <value>92.0</value>
+          </takeoffAngle>
+          <timeResidual>0.22</timeResidual>
+          <timeWeight>0.07</timeWeight>
+          <creationInfo>
+            <agencyID>CI</agencyID>
+            <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217932">
+          <pickID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217932</pickID>
+          <phase>P</phase>
+          <timeCorrection>-0.09</timeCorrection>
+          <azimuth>25.2</azimuth>
+          <distance>0.2663</distance>
+          <takeoffAngle>
+            <value>92.0</value>
+          </takeoffAngle>
+          <timeResidual>-0.04</timeResidual>
+          <timeWeight>0.15</timeWeight>
+          <creationInfo>
+            <agencyID>CI</agencyID>
+            <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217940">
+          <pickID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217940</pickID>
+          <phase>P</phase>
+          <timeCorrection>-0.09</timeCorrection>
+          <azimuth>254.8</azimuth>
+          <distance>0.2708</distance>
+          <takeoffAngle>
+            <value>92.0</value>
+          </takeoffAngle>
+          <timeResidual>0.04</timeResidual>
+          <timeWeight>0.15</timeWeight>
+          <creationInfo>
+            <agencyID>CI</agencyID>
+            <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+          </creationInfo>
+        </arrival>
+        <arrival publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217948">
+          <pickID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217948</pickID>
+          <phase>S</phase>
+          <timeCorrection>-0.35</timeCorrection>
+          <azimuth>254.8</azimuth>
+          <distance>0.2708</distance>
+          <takeoffAngle>
+            <value>92.0</value>
+          </takeoffAngle>
+          <timeResidual>0.31</timeResidual>
+          <timeWeight>0.07</timeWeight>
+          <creationInfo>
+            <agencyID>CI</agencyID>
+            <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+          </creationInfo>
+        </arrival>
+      </origin>
+      <magnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?magnitudeid=111257836">
+        <mag>
+          <value>0.13</value>
+          <uncertainty>0.063</uncertainty>
+        </mag>
+        <type>Ml</type>
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <methodID>smi:ci.anss.org/magnitude/CISNml2</methodID>
+        <stationCount>6</stationCount>
+        <azimuthalGap>146.8</azimuthalGap>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <stationMagnitudeContribution>
+          <stationMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271580</stationMagnitudeID>
+          <weight>1.0</weight>
+          <residual>-0.04</residual>
+        </stationMagnitudeContribution>
+        <stationMagnitudeContribution>
+          <stationMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271604</stationMagnitudeID>
+          <weight>1.0</weight>
+          <residual>-0.23</residual>
+        </stationMagnitudeContribution>
+        <stationMagnitudeContribution>
+          <stationMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271612</stationMagnitudeID>
+          <weight>0.0</weight>
+          <residual>-0.4</residual>
+        </stationMagnitudeContribution>
+        <stationMagnitudeContribution>
+          <stationMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271548</stationMagnitudeID>
+          <weight>1.0</weight>
+          <residual>0.14</residual>
+        </stationMagnitudeContribution>
+        <stationMagnitudeContribution>
+          <stationMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271556</stationMagnitudeID>
+          <weight>1.0</weight>
+          <residual>0.15</residual>
+        </stationMagnitudeContribution>
+        <stationMagnitudeContribution>
+          <stationMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271588</stationMagnitudeID>
+          <weight>1.0</weight>
+          <residual>-0.15</residual>
+        </stationMagnitudeContribution>
+        <stationMagnitudeContribution>
+          <stationMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271572</stationMagnitudeID>
+          <weight>1.0</weight>
+          <residual>-0.01</residual>
+        </stationMagnitudeContribution>
+        <stationMagnitudeContribution>
+          <stationMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271564</stationMagnitudeID>
+          <weight>1.0</weight>
+          <residual>0.0</residual>
+        </stationMagnitudeContribution>
+        <stationMagnitudeContribution>
+          <stationMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271596</stationMagnitudeID>
+          <weight>1.0</weight>
+          <residual>0.06</residual>
+        </stationMagnitudeContribution>
+        <stationMagnitudeContribution>
+          <stationMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271540</stationMagnitudeID>
+          <weight>1.0</weight>
+          <residual>0.27</residual>
+        </stationMagnitudeContribution>
+        <stationMagnitudeContribution>
+          <stationMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271620</stationMagnitudeID>
+          <weight>1.0</weight>
+          <residual>0.0</residual>
+        </stationMagnitudeContribution>
+        <stationMagnitudeContribution>
+          <stationMagnitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271628</stationMagnitudeID>
+          <weight>1.0</weight>
+          <residual>0.0</residual>
+        </stationMagnitudeContribution>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+      </magnitude>
+      <stationMagnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271540">
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <mag>
+          <value>0.4</value>
+        </mag>
+        <type>ML</type>
+        <amplitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271540</amplitudeID>
+        <waveformID networkCode="CI" stationCode="WBP" locationCode="" channelCode="HHN"></waveformID>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271548">
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <mag>
+          <value>0.27</value>
+        </mag>
+        <type>ML</type>
+        <amplitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271548</amplitudeID>
+        <waveformID networkCode="CI" stationCode="WBP" locationCode="" channelCode="HHE"></waveformID>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271556">
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <mag>
+          <value>0.28</value>
+        </mag>
+        <type>ML</type>
+        <amplitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271556</amplitudeID>
+        <waveformID networkCode="CI" stationCode="WNM" locationCode="" channelCode="HHN"></waveformID>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271564">
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <mag>
+          <value>0.13</value>
+        </mag>
+        <type>ML</type>
+        <amplitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271564</amplitudeID>
+        <waveformID networkCode="CI" stationCode="WNM" locationCode="" channelCode="HHE"></waveformID>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271572">
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <mag>
+          <value>0.12</value>
+        </mag>
+        <type>ML</type>
+        <amplitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271572</amplitudeID>
+        <waveformID networkCode="CI" stationCode="TOW2" locationCode="" channelCode="HHN"></waveformID>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271580">
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <mag>
+          <value>0.09</value>
+        </mag>
+        <type>ML</type>
+        <amplitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271580</amplitudeID>
+        <waveformID networkCode="CI" stationCode="TOW2" locationCode="" channelCode="HHE"></waveformID>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271588">
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <mag>
+          <value>-0.02</value>
+        </mag>
+        <type>ML</type>
+        <amplitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271588</amplitudeID>
+        <waveformID networkCode="CI" stationCode="SRT" locationCode="" channelCode="HHN"></waveformID>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271596">
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <mag>
+          <value>0.19</value>
+        </mag>
+        <type>ML</type>
+        <amplitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271596</amplitudeID>
+        <waveformID networkCode="CI" stationCode="SRT" locationCode="" channelCode="HHE"></waveformID>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271604">
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <mag>
+          <value>-0.1</value>
+        </mag>
+        <type>ML</type>
+        <amplitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271604</amplitudeID>
+        <waveformID networkCode="CI" stationCode="WRV2" locationCode="" channelCode="HHN"></waveformID>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271612">
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <mag>
+          <value>-0.27</value>
+        </mag>
+        <type>ML</type>
+        <amplitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271612</amplitudeID>
+        <waveformID networkCode="CI" stationCode="WRV2" locationCode="" channelCode="HHE"></waveformID>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271620">
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <mag>
+          <value>0.13</value>
+        </mag>
+        <type>ML</type>
+        <amplitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271620</amplitudeID>
+        <waveformID networkCode="CI" stationCode="WHF" locationCode="" channelCode="HHN"></waveformID>
+      </stationMagnitude>
+      <stationMagnitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocammid=872271628">
+        <originID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?originid=108872028</originID>
+        <mag>
+          <value>0.13</value>
+        </mag>
+        <type>ML</type>
+        <amplitudeID>quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271628</amplitudeID>
+        <waveformID networkCode="CI" stationCode="WHF" locationCode="" channelCode="HHE"></waveformID>
+      </stationMagnitude>
+      <pick publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217868">
+        <time>
+          <value>2025-01-01T07:27:42.720000Z</value>
+          <uncertainty>0.15</uncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="WBP" locationCode="" channelCode="HHN"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+        <polarity>undecidable</polarity>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217876">
+        <time>
+          <value>2025-01-01T07:27:40.350000Z</value>
+          <uncertainty>0.15</uncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="WNM" locationCode="" channelCode="HHZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>undecidable</polarity>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217884">
+        <time>
+          <value>2025-01-01T07:27:42.290000Z</value>
+          <uncertainty>0.15</uncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="WNM" locationCode="" channelCode="HHN"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+        <polarity>undecidable</polarity>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217892">
+        <time>
+          <value>2025-01-01T07:27:44.240000Z</value>
+          <uncertainty>0.15</uncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="WOR" locationCode="" channelCode="BHN"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+        <polarity>undecidable</polarity>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217900">
+        <time>
+          <value>2025-01-01T07:27:46.320000Z</value>
+          <uncertainty>0.15</uncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="TOW2" locationCode="" channelCode="BHN"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+        <polarity>undecidable</polarity>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217908">
+        <time>
+          <value>2025-01-01T07:27:42.690000Z</value>
+          <uncertainty>0.15</uncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="SRT" locationCode="" channelCode="HHZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>undecidable</polarity>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217916">
+        <time>
+          <value>2025-01-01T07:27:46.730000Z</value>
+          <uncertainty>0.15</uncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="SRT" locationCode="" channelCode="HHE"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+        <polarity>undecidable</polarity>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217924">
+        <time>
+          <value>2025-01-01T07:27:46.240000Z</value>
+          <uncertainty>0.15</uncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="WBS" locationCode="" channelCode="BHE"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+        <polarity>undecidable</polarity>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217932">
+        <time>
+          <value>2025-01-01T07:27:43.000000Z</value>
+          <uncertainty>0.15</uncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="WRV2" locationCode="" channelCode="HHZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>undecidable</polarity>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217940">
+        <time>
+          <value>2025-01-01T07:27:43.160000Z</value>
+          <uncertainty>0.15</uncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="WHF" locationCode="" channelCode="HHZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>undecidable</polarity>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <pick publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?assocaro=424217948">
+        <time>
+          <value>2025-01-01T07:27:47.050000Z</value>
+          <uncertainty>0.15</uncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="WHF" locationCode="" channelCode="HHN"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+        <polarity>undecidable</polarity>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>reviewed</evaluationStatus>
+        <creationInfo>
+          <agencyID>CI</agencyID>
+          <creationTime>2025-01-02T19:13:02.000000Z</creationTime>
+        </creationInfo>
+      </pick>
+      <amplitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271596">
+        <genericAmplitude>
+          <value>1.2948e-05</value>
+        </genericAmplitude>
+        <type>AML</type>
+        <category>point</category>
+        <unit>m</unit>
+        <methodID>smi:ci.anss.org/amp/WASF</methodID>
+        <snr>2.55065221521778</snr>
+        <waveformID networkCode="CI" stationCode="SRT" locationCode="" channelCode="HHE"></waveformID>
+        <scalingTime>
+          <value>2025-01-01T07:27:46.860000Z</value>
+        </scalingTime>
+        <magnitudeHint>ML</magnitudeHint>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+      </amplitude>
+      <amplitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271588">
+        <genericAmplitude>
+          <value>8.9533e-06</value>
+        </genericAmplitude>
+        <type>AML</type>
+        <category>point</category>
+        <unit>m</unit>
+        <methodID>smi:ci.anss.org/amp/WASF</methodID>
+        <snr>1.53929716443805</snr>
+        <waveformID networkCode="CI" stationCode="SRT" locationCode="" channelCode="HHN"></waveformID>
+        <scalingTime>
+          <value>2025-01-01T07:27:46.990000Z</value>
+        </scalingTime>
+        <magnitudeHint>ML</magnitudeHint>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+      </amplitude>
+      <amplitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271580">
+        <genericAmplitude>
+          <value>1.4857e-05</value>
+        </genericAmplitude>
+        <type>AML</type>
+        <category>point</category>
+        <unit>m</unit>
+        <methodID>smi:ci.anss.org/amp/WASF</methodID>
+        <snr>1.79027054157201</snr>
+        <waveformID networkCode="CI" stationCode="TOW2" locationCode="" channelCode="HHE"></waveformID>
+        <scalingTime>
+          <value>2025-01-01T07:27:47.000000Z</value>
+        </scalingTime>
+        <magnitudeHint>ML</magnitudeHint>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+      </amplitude>
+      <amplitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271572">
+        <genericAmplitude>
+          <value>1.2438e-05</value>
+        </genericAmplitude>
+        <type>AML</type>
+        <category>point</category>
+        <unit>m</unit>
+        <methodID>smi:ci.anss.org/amp/WASF</methodID>
+        <snr>2.16715748244316</snr>
+        <waveformID networkCode="CI" stationCode="TOW2" locationCode="" channelCode="HHN"></waveformID>
+        <scalingTime>
+          <value>2025-01-01T07:27:47.260000Z</value>
+        </scalingTime>
+        <magnitudeHint>ML</magnitudeHint>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+      </amplitude>
+      <amplitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271548">
+        <genericAmplitude>
+          <value>2.0162e-05</value>
+        </genericAmplitude>
+        <type>AML</type>
+        <category>point</category>
+        <unit>m</unit>
+        <methodID>smi:ci.anss.org/amp/WASF</methodID>
+        <snr>13.5539322477122</snr>
+        <waveformID networkCode="CI" stationCode="WBP" locationCode="" channelCode="HHE"></waveformID>
+        <scalingTime>
+          <value>2025-01-01T07:27:42.780000Z</value>
+        </scalingTime>
+        <magnitudeHint>ML</magnitudeHint>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+      </amplitude>
+      <amplitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271540">
+        <genericAmplitude>
+          <value>1.9794e-05</value>
+        </genericAmplitude>
+        <type>AML</type>
+        <category>point</category>
+        <unit>m</unit>
+        <methodID>smi:ci.anss.org/amp/WASF</methodID>
+        <snr>18.5139675814696</snr>
+        <waveformID networkCode="CI" stationCode="WBP" locationCode="" channelCode="HHN"></waveformID>
+        <scalingTime>
+          <value>2025-01-01T07:27:42.830000Z</value>
+        </scalingTime>
+        <magnitudeHint>ML</magnitudeHint>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+      </amplitude>
+      <amplitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271628">
+        <genericAmplitude>
+          <value>1.363e-05</value>
+        </genericAmplitude>
+        <type>AML</type>
+        <category>point</category>
+        <unit>m</unit>
+        <methodID>smi:ci.anss.org/amp/WASF</methodID>
+        <snr>13.3096543045867</snr>
+        <waveformID networkCode="CI" stationCode="WHF" locationCode="" channelCode="HHE"></waveformID>
+        <scalingTime>
+          <value>2025-01-01T07:27:47.150000Z</value>
+        </scalingTime>
+        <magnitudeHint>ML</magnitudeHint>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+      </amplitude>
+      <amplitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271620">
+        <genericAmplitude>
+          <value>1.5748e-05</value>
+        </genericAmplitude>
+        <type>AML</type>
+        <category>point</category>
+        <unit>m</unit>
+        <methodID>smi:ci.anss.org/amp/WASF</methodID>
+        <snr>14.4108367318187</snr>
+        <waveformID networkCode="CI" stationCode="WHF" locationCode="" channelCode="HHN"></waveformID>
+        <scalingTime>
+          <value>2025-01-01T07:27:47.090000Z</value>
+        </scalingTime>
+        <magnitudeHint>ML</magnitudeHint>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+      </amplitude>
+      <amplitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271564">
+        <genericAmplitude>
+          <value>9.5571e-06</value>
+        </genericAmplitude>
+        <type>AML</type>
+        <category>point</category>
+        <unit>m</unit>
+        <methodID>smi:ci.anss.org/amp/WASF</methodID>
+        <snr>7.41458530901997</snr>
+        <waveformID networkCode="CI" stationCode="WNM" locationCode="" channelCode="HHE"></waveformID>
+        <scalingTime>
+          <value>2025-01-01T07:27:42.450000Z</value>
+        </scalingTime>
+        <magnitudeHint>ML</magnitudeHint>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+      </amplitude>
+      <amplitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271556">
+        <genericAmplitude>
+          <value>1.0691e-05</value>
+        </genericAmplitude>
+        <type>AML</type>
+        <category>point</category>
+        <unit>m</unit>
+        <methodID>smi:ci.anss.org/amp/WASF</methodID>
+        <snr>9.88808671621021</snr>
+        <waveformID networkCode="CI" stationCode="WNM" locationCode="" channelCode="HHN"></waveformID>
+        <scalingTime>
+          <value>2025-01-01T07:27:42.300000Z</value>
+        </scalingTime>
+        <magnitudeHint>ML</magnitudeHint>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+      </amplitude>
+      <amplitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271612">
+        <genericAmplitude>
+          <value>3.3337e-06</value>
+        </genericAmplitude>
+        <type>AML</type>
+        <category>point</category>
+        <unit>m</unit>
+        <methodID>smi:ci.anss.org/amp/WASF</methodID>
+        <snr>2.39720540105521</snr>
+        <waveformID networkCode="CI" stationCode="WRV2" locationCode="" channelCode="HHE"></waveformID>
+        <scalingTime>
+          <value>2025-01-01T07:27:47.820000Z</value>
+        </scalingTime>
+        <magnitudeHint>ML</magnitudeHint>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+      </amplitude>
+      <amplitude publicID="quakeml:service.scedc.caltech.edu/fdsnws/event/1/query?ampid=872271604">
+        <genericAmplitude>
+          <value>3.5176e-06</value>
+        </genericAmplitude>
+        <type>AML</type>
+        <category>point</category>
+        <unit>m</unit>
+        <methodID>smi:ci.anss.org/amp/WASF</methodID>
+        <snr>2.22719810095775</snr>
+        <waveformID networkCode="CI" stationCode="WRV2" locationCode="" channelCode="HHN"></waveformID>
+        <scalingTime>
+          <value>2025-01-01T07:27:47.600000Z</value>
+        </scalingTime>
+        <magnitudeHint>ML</magnitudeHint>
+        <evaluationMode>manual</evaluationMode>
+        <evaluationStatus>final</evaluationStatus>
+      </amplitude>
+    </event>
+  </eventParameters>
+</q:quakeml>
