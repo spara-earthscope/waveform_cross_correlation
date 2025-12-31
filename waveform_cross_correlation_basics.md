@@ -13,3 +13,7 @@ Mathematically, the matched filter is just the cross-correlation of the data wit
 - Normalizing the correlation makes the detector insensitive to amplitude differences (helpful when events have similar shapes but different sizes).
 
 **Method**: Correlate a known template with noisy data. A spike indicates a detection.
+
+**Process**:
+
+1. 

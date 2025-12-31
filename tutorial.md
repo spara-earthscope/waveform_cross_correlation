@@ -783,3 +783,47 @@ if __name__ == "__main__":
     _ = run_ta_demo()
 
 ```
+
+## What STA/LTA does
+
+It’s a simple onset detector: compare the recent signal energy (STA) to the background energy (LTA).
+
+- During quiet time, both are similar → ratio ≈ 1.
+- When a phase (P, S, LP, blast, etc.) arrives, short-term energy jumps while long-term background hasn’t caught up → ratio ≫ 1 → trigger “ON”.
+- After the transient passes, the ratio falls → trigger “OFF”.
+
+### Minimal workflow
+
+1. Preprocess: remove mean/trend, band-pass to target band, optional instrument removal if needed.
+2. Characteristic function: use x^2 or envelope.
+3. Compute STA, LTA, ratio.
+4. Hysteresis thresholds + coincidence across stations (optional).
+5. Refine picks (e.g., maximum slope, polarity, travel-time consistency).
+
+### Common pitfalls (and fixes)
+
+- Wrong band → swamped by microseisms or cultural noise. Fix: pick a band where your phase is distinctive.
+- LTA contamination by big events → elevated baseline. Fix: longer LTA, freeze LTA briefly after trigger, or robust baselines (median/MAD).
+- Chatter around threshold. Fix: use Ton > Toff, apply a short refractory time after ON.
+- Gain/clock issues across stations → spurious coincidence. Fix: check metadata, use per-station thresholds.
+
+### Obspy one-liners
+
+```
+from obspy.signal.trigger import classic_sta_lta, recursive_sta_lta, trigger_onset
+
+# Assume x_f is bandpassed, float64
+sta_s, lta_s = 0.8, 12.0
+nsta, nlta = int(sta_s*fs), int(lta_s*fs)
+
+# Classic boxcar
+cft = classic_sta_lta(x_f, nsta, nlta)
+
+# Or recursive (Allen)
+cft_rec = recursive_sta_lta(x_f, nsta, nlta)
+
+# Get ON/OFF using hysteresis
+on_off = trigger_onset(cft, 4.0, 2.0)   # Ton=4.0, Toff=2.0
+# on_off rows are sample indices [on, off)
+```
+
